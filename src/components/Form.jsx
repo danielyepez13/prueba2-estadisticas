@@ -30,7 +30,7 @@ const Form = () => {
     const handleClick = async () => {
         // console.log(movies)
         try {
-            let res = await fetch("http://localhost:3000/api/movies", {
+            let res = await fetch("/api/movies", {
                 method: "POST",
                 body: JSON.stringify({
                     movies: movies,
