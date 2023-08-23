@@ -30,7 +30,7 @@ const Form = () => {
     const handleClick = async () => {
         // console.log(movies)
         try {
-            let res = await fetch("/api/movies", {
+            let res = await fetch("https://prueba2-estadisticas.vercel.app/api/movies", {
                 method: "POST",
                 body: JSON.stringify({
                     movies: movies,

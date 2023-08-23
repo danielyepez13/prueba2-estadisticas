@@ -3,7 +3,7 @@ import Link from "next/link"
 
 // Se borrarán todos los registros
 const onDelete = async () => {
-  const res = await fetch("/api/movies", {
+  const res = await fetch("https://prueba2-estadisticas.vercel.app/api/movies", {
     method: "DELETE"
   })
   return res.json();
